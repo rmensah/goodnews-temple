@@ -7,10 +7,10 @@ var path = require('path');
 app.use(express.static(__dirname + "/public"));
 
 app.get("*", function(req,res){
-	res.sendFile(process.cwd() + "/public/index.html")
+	res.sendFile(process.cwd() + "/public/views/index.html")
 });
 
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
-  console.log("listening on port:" + PORT);
+  console.log("listening on port:" + PORT)
 });
