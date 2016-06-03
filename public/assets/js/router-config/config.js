@@ -9,26 +9,26 @@ icgcApp.config(['$stateProvider','$urlRouterProvider','$locationProvider', funct
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl: 'partial-home.html'
+            templateUrl: 'home.html'
         })
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         .state('about', {
             url: '/about',
-            templateUrl: 'partial-about.html'     
+            templateUrl: 'about.html'     
         })
 
 
         // Skills PAGE  =================================
         .state('skills', {
             url: '/skills',
-            templateUrl: 'partial-skills.html'     
+            templateUrl: 'skills.html'     
         })
 
         // Contact PAGE  =================================
         .state('contact', {
             url: '/contact',
-            templateUrl: 'partial-contact.html'     
+            templateUrl: 'contact.html'     
         })
 
         // Resume PAGE  =================================

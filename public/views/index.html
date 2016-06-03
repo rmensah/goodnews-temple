@@ -1,15 +1,39 @@
-<html lang="en" >
+<html ng-app="icgcApp" ng-cloak lang="en" >
 <head>
 <title>ICGC Good News Temple</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
+   <!-- Compiled and minified CSS (Materialize)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <base href="/">
 </head>
-<body ng-app="icgcApp" ng-cloak>
+<body>
   <!--
     Your HTML content here
   -->  
+
+  <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a ui-sref="#!">one</a></li>
+  <li><a ui-sref="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a ui-sref="#!">three</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a ui-sref="#!" class="brand-logo">Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a ui-sref="sass.html">Sass</a></li>
+      <li><a ui-sref="badges.html">Components</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" ui-sref="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+
   
 <div class="row">
         <div class="col s12 m6">
@@ -43,6 +67,29 @@
         </div>
       </div>
 
+
+      <div ui-view></div>
+
+
+  <footer>
+    <div class="footer-copyright">
+      <div class="container center">
+        <p id="footer"> © 2016 1View. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-cookies.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-pusher/0.0.14/angular-pusher.js"></script>
+
   <!-- Angular Material requires Angular.js Libraries -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
@@ -55,10 +102,8 @@
   <!-- Your application bootstrap  -->
   <script type="text/javascript"> 
 
-   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    
   <!--Angular Dependency-->
+  <script src="../assets/js/app/app.js"></script>
   <script src="../assets/js/router-config/config.js"></script>
   <script src="../assets/js/controller/controller.js"></script>      
    
