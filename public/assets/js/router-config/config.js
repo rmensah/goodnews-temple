@@ -13,35 +13,35 @@ icgcApp.config(['$stateProvider','$urlRouterProvider','$locationProvider', funct
         })
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('about', {
-            url: '/about',
-            templateUrl: 'about.html'     
-        })
+        // .state('about', {
+        //     url: '/about',
+        //     templateUrl: 'about.html'     
+        // })
 
 
         // Skills PAGE  =================================
-        .state('skills', {
-            url: '/skills',
-            templateUrl: 'skills.html'     
-        })
+        // .state('skills', {
+        //     url: '/skills',
+        //     templateUrl: 'skills.html'     
+        // })
 
         // Contact PAGE  =================================
-        .state('contact', {
-            url: '/contact',
-            templateUrl: 'contact.html'     
-        })
+        // .state('contact', {
+        //     url: '/contact',
+        //     templateUrl: 'contact.html'     
+        // })
 
         // Resume PAGE  =================================
-        .state('resume', {
-            url: '/resume',
-            templateUrl: 'partial-skills.html'     
-        })
+        // .state('resume', {
+        //     url: '/resume',
+        //     templateUrl: 'partial-skills.html'     
+        // })
 
         // Portfolio PAGE  =================================
-        .state('portfolio', {
-            url: '/portfolio',
-            templateUrl: 'partial-portfolio.html'     
-        })
+        // .state('portfolio', {
+        //     url: '/portfolio',
+        //     templateUrl: 'partial-portfolio.html'     
+        // })
 
 
 
