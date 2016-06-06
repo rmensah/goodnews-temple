@@ -1,8 +1,8 @@
-<html ng-app="icgcApp" lang="en" >
+<html ng-app="icgcApp" class="ng-scope" lang="en" >
 <head>
 <title>ICGC Good News Temple</title>
 <meta charset="UTF-8">
-<link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 <!-- Compiled and minified CSS -->
 
 <!-- CSS (load bootstrap from CDN) -->
@@ -41,7 +41,7 @@
 
 <!-- Carousel -->
 
-<div ng-controller="CarouselDemoCtrl">
+<!-- <div ng-controller="CarouselDemoCtrl">
   <carousel interval="myInterval">
     <slide ng-repeat="slide in slides" active="slide.active" ng-animate="true">
       <img ng-src="{{slide.image}}?{{$index}}" style="margin:auto;">
@@ -51,12 +51,47 @@
       </div>
     </slide>
   </carousel>
-</div>
+</div> -->
+
+<!-- Materialize Slider -->
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="../images/Influence2016.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../images/Influence2016.png"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="../images/Influence2016.png">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../images/Influence2016.png"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="../images/Influence2016.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
 
 <!-- Simple Card -->
 <div class="row">
   <div class="col s12 m3">
-    <div class="card-panel black">
+    <div class="card-panel black z-depth-5">
       <span class="white-text">I am a very simple card. I am good at containing small bits of information.
       I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
       </span>
@@ -64,7 +99,7 @@
   </div>
 
   <div class="col s12 m3">
-    <div class="card-panel white">
+    <div class="card-panel white z-depth-5">
       <span class="red-text">I am a very simple card. I am good at containing small bits of information.
       I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
       </span>
@@ -72,7 +107,7 @@
   </div>
 
   <div class="col s12 m3">
-    <div class="card-panel teal">
+    <div class="card-panel teal z-depth-5">
       <span class="white-text">I am a very simple card. I am good at containing small bits of information.
       I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
       </span>
@@ -80,7 +115,7 @@
   </div>
 
   <div class="col s12 m3">
-    <div class="card-panel blue">
+    <div class="card-panel blue z-depth-5">
       <span class="white-text">I am a very simple card. I am good at containing small bits of information.
       I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
       </span>
@@ -93,7 +128,7 @@
 
 <div class="row">
   <div class="col s12 m4">
-    <div class="card blue-grey darken-1">
+    <div class="card blue-grey z-depth-5 darken-1">
       <div class="card-content white-text">
         <span class="card-title">Card Title</span>
         <p>I am a very simple card. I am good at containing small bits of information.
@@ -107,7 +142,7 @@
   </div>
 
   <div class="col s4 m4">
-    <div class="card blue-grey darken-1">
+    <div class="card blue-grey z-depth-5 darken-1">
       <div class="card-content white-text">
         <span class="card-title">Card Title</span>
         <p>I am a very simple card. I am good at containing small bits of information.
@@ -121,7 +156,7 @@
   </div>
 
   <div class="col s4 m4">
-    <div class="card blue-grey darken-1">
+    <div class="card blue-grey z-depth-5 darken-1">
       <div class="card-content white-text">
         <span class="card-title">Card Title</span>
         <p>I am a very simple card. I am good at containing small bits of information.
@@ -145,7 +180,7 @@
 
   <!-- Image Card -->
    <div class="col s4 m6">
-    <div class="card">
+    <div class="card z-depth-5">
       <div class="card-image">
         <img src="../images/Influence2016.png">
         <span class="card-title">Card Title</span>
@@ -195,7 +230,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-    © 2014 Copyright ICGC - Good News Temple | 850 Ridgewood Ave, Suit B, North Brunswick, NJ 08902
+    © 2016 Copyright ICGC - Good News Temple | 850 Ridgewood Ave, Suit B, North Brunswick, NJ 08902
     <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>
@@ -209,20 +244,20 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-cookies.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
   <!--Import jQuery before materialize.js-->
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
- <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-pusher/0.0.14/angular-pusher.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.js"></script> 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-animate.min.js"></script>
   
 
   <!--Angular Dependency-->
   <script src="../assets/js/app/app.js"></script>
-  <script src="../assets/js/router-config/config.js"></script>
+  <script src="../assets/js/router-config/router.js"></script>
   <script src="../assets/js/controller/carouselController.js"></script>    
 </body>
 </html>

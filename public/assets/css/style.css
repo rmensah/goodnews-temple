@@ -1,8 +1,8 @@
-footer {
+page-footer {
   background-color: #2C2723;
   width: 100%;
   bottom: 0;
-  position: fixed;
+  position: bottom;
 }
 
 #footer {

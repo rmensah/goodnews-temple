@@ -9,8 +9,9 @@ icgcApp.config(['$stateProvider','$urlRouterProvider','$locationProvider', funct
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl: 'home.html'
-        })
+            templateUrl: 'home.html',
+            controller: 'CarouselDemoCtrl'
+        });
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         // .state('about', {
