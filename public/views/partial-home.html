@@ -1,0 +1,61 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a ui-sref="#!">one</a></li>
+  <li><a ui-sref="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a ui-sref="#!">three</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+  <li><a ui-sref="#!">OUR MISSION</a></li>
+  <li><a ui-sref="#!">OUR PHILOSOPY</a></li>
+  <li class="divider">OUR VISION</li>
+  <li><a ui-sref="#!">STATEMENT OF FAITH</a></li>
+  <li><a ui-sref="#!">DR MENSAH OTABIL</a></li>
+  <li><a ui-sref="#!">PASTOR AUGUSTINE AMANKONAH</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a ui-sref="#!" class="brand-logo"><img src="../images/favicon.ico" type="image/icon"></a>
+    <a class="navbar-brand" ui-sref="#!">INTERNATIONAL CENTRAL <br>GOSPEL CHURCH <br> Good News Temple</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a ui-sref="home.html">HOME</a></li>
+      <!-- <li><a ui-sref="about.html">About</a></li> -->
+      <li><a ui-sref="contact.html">CONTACT</a></li>
+      <!-- Dropdown Trigger 2-->
+      <li><a class="dropdown-button" ui-sref="#!" data-activates="dropdown2">ABOUT<i class="material-icons right">arrow_drop_down</i></a></li>
+
+      <!-- Dropdown Trigger 1-->
+      <li><a class="dropdown-button" ui-sref="#!" data-activates="dropdown1">MORE<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<footer class="page-footer" id="foot">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Footer Content</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" ui-sref="#!">Link 1</a></li>
+          <li><a class="grey-text text-lighten-3" ui-sref="#!">Link 2</a></li>
+          <li><a class="grey-text text-lighten-3" ui-sref="#!">Link 3</a></li>
+          <li><a class="grey-text text-lighten-3" ui-sref="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2016 Copyright ICGC - Good News Temple | 850 Ridgewood Ave, Suit B, North Brunswick, NJ 08902
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>

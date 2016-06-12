@@ -1,6 +1,6 @@
-var icgcApp = angular.module('icgcApp', ['ui.router']);
+var icgcapp = angular.module('icgcapp', ['ui.router']);
 
-icgcApp.config(['$stateProvider','$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider,$locationProvider) {
+icgcapp.config(['$stateProvider','$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider,$locationProvider) {
     
     $urlRouterProvider.otherwise('/home');
     
@@ -9,9 +9,10 @@ icgcApp.config(['$stateProvider','$urlRouterProvider','$locationProvider', funct
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl: 'home.html',
-            controller: 'CarouselDemoCtrl'
-        });
+            templateUrl:'partial-home.html',
+            abstract: true,
+             controller: 'homeController'
+        })
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         // .state('about', {
@@ -67,3 +68,5 @@ icgcApp.config(['$stateProvider','$urlRouterProvider','$locationProvider', funct
         $locationProvider.html5Mode(true);
         
 }]);
+
+

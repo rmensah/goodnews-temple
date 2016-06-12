@@ -1,3 +1,7 @@
+a {
+    pointer:cursor;
+}
+
 page-footer {
   background-color: #2C2723;
   width: 100%;
@@ -5,9 +9,10 @@ page-footer {
   position: bottom;
 }
 
-#footer {
+#foot {
   color: white;
   text-align: center;
+  position: bottom
 }
 
 /*.carousel {
