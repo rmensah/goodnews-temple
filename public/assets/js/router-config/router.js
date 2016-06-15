@@ -1,6 +1,6 @@
-var icgcapp = angular.module('icgcapp', ['ui.router']);
+var app = angular.module('icgcapp', ['ngRoute','ngCookies','ui.router']);
 
-icgcapp.config(['$stateProvider','$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider,$locationProvider) {
+app.config(['$stateProvider','$locationProvider','$urlRouterProvider', function($stateProvider, $locationProvider, $urlRouterProvider) {
     
     $urlRouterProvider.otherwise('/home');
     
@@ -9,9 +9,12 @@ icgcapp.config(['$stateProvider','$urlRouterProvider','$locationProvider', funct
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
             url: '/home',
-            templateUrl:'partial-home.html',
-            abstract: true,
-             controller: 'homeController'
+            views: {
+                '':{ templateUrl: 'index.html'},
+            }
+            
+            // abstract: true,
+            //  controller: 'homeController'
         })
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================

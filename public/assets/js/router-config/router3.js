@@ -1,16 +1,16 @@
 // router3.js
-var icgcapp = angular.module('icgcapp', ['ui.router']);
+var icgcapp = angular.module('icgcapp', ['ngRoute','ui.router']);
 
 icgcapp.config(function($stateProvider, $urlRouterProvider) {
     
-    $urlRouterProvider.otherwise('/about');
+    $urlRouterProvider.otherwise('/home');
     
     $stateProvider
         
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
-            url: '/about',
-            templateUrl: 'partial-about.html'
+            url: '/home',
+            templateUrl: 'partial-home.html'
         })
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
